@@ -11,17 +11,11 @@ public class Brigada extends Formacao {
         super(descricao);
         this.formacaos = new ArrayList<Formacao>();
     }
-
-    @Override
-    public String getFormacao() {
-        return null;
-    }
-
     public void addFormacao(Formacao formacao) {
         this.formacaos.add(formacao);
     }
 
-    public String getConteudo() {
+    public String getFormacao() {
         String saida = "";
         saida = "Brigada: " + this.getDescricao() + "\n";
         for (Formacao formacao : formacaos) {
